@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="590.0" style="-fx-background-color: #eeeeee;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.pharmathome.controller.PrescrizioniFarmacistaController">
+   <children>
+      <Label fx:id="titoloLabel" layoutX="7.0" layoutY="14.0" text="Elenco prescrizioni">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="prescrizioniTableView" layoutX="7.0" layoutY="56.0" prefHeight="337.0" prefWidth="576.0">
+        <columns>
+          <TableColumn fx:id="numeroColumn" prefWidth="73.0" text="Numero" />
+          <TableColumn fx:id="medicoColumn" prefWidth="117.0" text="Medico ordinante" />
+            <TableColumn fx:id="pazienteColumn" prefWidth="130.0" text="Paziente richiedente" />
+            <TableColumn fx:id="farmaciColumn" prefWidth="97.0" text="Farmaci" />
+            <TableColumn fx:id="dataColumn" prefWidth="92.0" text="Data emissione" />
+            <TableColumn fx:id="buttonColumn" minWidth="0.0" prefWidth="66.0" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

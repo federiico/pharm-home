@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="590.0" style="-fx-background-color: #eeeeee;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.pharmathome.controller.FarmaciAdminController">
+   <children>
+      <TableView fx:id="tableView" layoutX="5.0" layoutY="76.0" prefHeight="296.0" prefWidth="581.0">
+        <columns>
+            <TableColumn fx:id="codiceColumn" prefWidth="85.0" text="Codice" />
+          <TableColumn fx:id="nomeColumn" prefWidth="108.0" text="Nome" />
+          <TableColumn fx:id="produttoreColumn" prefWidth="144.0" text="Casa Farmaceutica" />
+            <TableColumn fx:id="disponibilitaColumn" prefWidth="121.0" text="Disponibilità" />
+            <TableColumn fx:id="buttonColumn" prefWidth="122.0" />
+        </columns>
+      </TableView>
+      <Button fx:id="addFarmacoButton" layoutX="476.0" layoutY="380.0" mnemonicParsing="false" onAction="#aggiungiFarmaco" text="Inserisci farmaco" />
+      <ComboBox fx:id="visualizzaComboBox" layoutX="438.0" layoutY="39.0" onAction="#filtraFarmaci" prefHeight="27.0" prefWidth="149.0" />
+      <Label fx:id="visualizzLabel" layoutX="373.0" layoutY="44.0" prefHeight="18.0" prefWidth="63.0" style="-fx-font-weight: bold;" text="Visualizza">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

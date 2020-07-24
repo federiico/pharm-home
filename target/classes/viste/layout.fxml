@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="mainPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="734.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.pharmathome.controller.LayoutController">
+   <top>
+      <AnchorPane fx:id="topPane" prefHeight="38.0" prefWidth="712.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="profileImage" fitHeight="28.0" fitWidth="31.0" layoutX="7.0" layoutY="7.0">
+               <image>
+                  <Image url="@profile.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="profileNameLabel" layoutX="38.0" layoutY="12.0" prefHeight="18.0" prefWidth="176.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="logoutButton" layoutX="693.0" layoutY="9.0" mnemonicParsing="false" onAction="#logout" prefHeight="23.0" prefWidth="30.0" style="-fx-background-color: white;" />
+            <ImageView fx:id="logoutImage" fitHeight="23.0" fitWidth="26.0" layoutX="698.0" layoutY="10.0" preserveRatio="true">
+               <image>
+                  <Image url="@logout.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </top>
+   <left>
+      <AnchorPane fx:id="leftPane" prefHeight="448.0" prefWidth="144.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="leftVBox" prefHeight="448.0" prefWidth="145.0" style="-fx-background-color: #0174cf;" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>

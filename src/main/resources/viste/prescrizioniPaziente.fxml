@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="448.0" prefWidth="590.0" style="-fx-background-color: #eeeeee;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.univaq.disim.oop.pharmathome.controller.PrescrizioniPazienteController">
+   <children>
+      <Label fx:id="ricercaLabel" layoutX="14.0" layoutY="14.0" text="Ricerca prescrizione">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="medicoField" layoutX="67.0" layoutY="57.0" prefHeight="27.0" prefWidth="98.0" />
+      <Label fx:id="medicoLabel" layoutX="14.0" layoutY="63.0" text="Medico">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="farmacoField" layoutX="262.0" layoutY="59.0" prefHeight="27.0" prefWidth="98.0" />
+      <Label fx:id="farmacoLabel" layoutX="202.0" layoutY="63.0" text="Farmaco">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dataPicker" editable="false" layoutX="435.0" layoutY="57.0" prefHeight="27.0" prefWidth="150.0" />
+      <Label fx:id="dataLabel" layoutX="400.0" layoutY="62.0" text="Data">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="cercaButton" layoutX="534.0" layoutY="93.0" mnemonicParsing="false" onAction="#cercaPrescrizione" text="Cerca" />
+      <Separator layoutX="16.0" layoutY="158.0" prefHeight="0.0" prefWidth="575.0" />
+      <Label fx:id="storicoLabel" layoutX="16.0" layoutY="170.0" text="Storico">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="prescrizioniTableView" layoutX="92.0" layoutY="196.0" prefHeight="209.0" prefWidth="438.0">
+         <columns>
+            <TableColumn fx:id="numeroColumn" prefWidth="73.0" text="Numero" />
+            <TableColumn fx:id="medicoColumn" prefWidth="140.0" text="Medico ordinante" />
+            <TableColumn fx:id="farmaciColumn" prefWidth="117.0" text="Farmaci" />
+            <TableColumn fx:id="dataColumn" prefWidth="107.0" text="Data emissione" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
